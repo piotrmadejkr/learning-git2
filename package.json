@@ -13,7 +13,6 @@
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass"
   },
   "repository": {
@@ -33,6 +32,8 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "nu-html-checker": "^0.1.0"
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0"
   }
 }
